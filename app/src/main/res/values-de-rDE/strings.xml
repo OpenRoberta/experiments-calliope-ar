@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AR Calliope</string>
+    <string name="button_compass">Kompass</string>
+    <string name="button_temperature">Temperatur</string>
+    <string name="app_title">AR Calliope</string>
+    <string name="left_arrow_description">Hauptmenü Button</string>
+    <string name="fit_image_to_scan">Bild zum Scannen anpassen</string>
+    <string name="textview_connect_bluetooth">Bitte verbinde dich zunächst mit deinem Calliope:</string>
+    <string name="button_bluetooth_search">Nach Bluetooth-Geräten suchen</string>
+    <string name="bluetooth_settings">Bluetooth Einstellungen</string>
+    <string name="button_startScanning">Scan starten</string>
+    <string name="button_stopScanning">Scan stoppen</string>
+    <string name="devices_found">Gefundene Geräte:</string>
+    <string name="scanning_for_devices">Suche nach Geräten …</string>
+    <string name="button_bluetoothBack">Zurück</string>
+    <string name="button_connect">Verbinden</string>
+    <string name="button_light">Licht</string>
+    <string name="button_accelerometer">Beschleunigung</string>
+    <string name="button_audio">Lautstärke</string>
+    <string name="location_not_active_message">Standort ist nicht aktiv!\nBitte aktiviere deinen Standort um fortzufahren.</string>
+    <string name="location_activate">Jetzt aktivieren</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="need_location_access">Diese App benötigt Zugriff auf den Standort</string>
+    <string name="grant_location_access">Damit die Applikation Bluetooth-Geräte in der Umgebung erkennen kann, muss der Standort freigegeben werden.</string>
+    <string name="button_accelerometer_short">Beschl.</string>
+    <string name="button_audio_short">Lauts.</string>
+    <string name="button_temperature_short">Temp.</string>
+    <string name="button_thermometer_short">Thermo.</string>
+    <string name="bluetooth_tutorial">Es wird automatisch eine Verbindung hergestellt, wenn ein Calliope gefunden wurde.</string>
+    <string name="button_camp">Camp</string>
+</resources>

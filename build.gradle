@@ -1,0 +1,37 @@
+buildscript {
+    // Define versions in a single place
+    ext {
+        // Sdk and tools
+        compileSdkVersion = 28
+        minSdkVersion = 24
+        targetSdkVersion = 28
+        buildToolsVersion = "30.0.0"
+
+        // App dependencies
+        appcompatVersion = '1.2.0'
+        arcoreVersion = '1.20.0'
+        filamentVersion = '1.8.1'
+        gradleVersion = '4.1.0'
+        materialVersion = '1.2.1'
+    }
+
+    repositories {
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$gradleVersion"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">AR Calliope</string>
+    <string name="button_compass">Compass</string>
+    <string name="button_temperature">Temperature</string>
+    <string name="app_title">AR Calliope</string>
+    <string name="left_arrow_description">Main menu button</string>
+    <string name="fit_image_to_scan">Fit image to scan</string>
+    <string name="textview_connect_bluetooth">Please connect to your Calliope first:</string>
+    <string name="button_bluetooth_search">Search for Bluetooth devices</string>
+    <string name="bluetooth_settings">Bluetooth Settings</string>
+    <string name="button_startScanning">Start Scan</string>
+    <string name="button_stopScanning">Stop Scan</string>
+    <string name="devices_found">Devices found:</string>
+    <string name="scanning_for_devices">Scanning for devices …</string>
+    <string name="button_bluetoothBack">Back</string>
+    <string name="button_connect">Connect</string>
+    <string name="button_light">Light</string>
+    <string name="button_accelerometer">Acceleration</string>
+    <string name="button_audio">Volume</string>
+    <string name="need_location_access">This app needs location access</string>
+    <string name="grant_location_access">Please grant location access so this app can detect peripherals.</string>
+    <string name="location_not_active_message">Location services are not active!\nPlease activate Location to continue.</string>
+    <string name="location_activate">Activate now</string>
+    <string name="cancel">Cancel</string>
+    <string name="button_accelerometer_short">Accel.</string>
+    <string name="button_audio_short">Vol.</string>
+    <string name="button_temperature_short">Temp.</string>
+    <string name="button_thermometer_short">Thermo.</string>
+    <string name="bluetooth_tutorial">A connection is automatically established when a calliope is found.</string>
+    <string name="button_camp">Camp</string>
+
+</resources>

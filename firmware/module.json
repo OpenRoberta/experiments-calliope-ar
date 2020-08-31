@@ -1,0 +1,11 @@
+{
+  "name": "fh-frankfurt-ss2020",
+  "version": "1.0.0",
+  "description": "Calliope Projekt",
+  "license": "Apache 2.0",
+  "dependencies": {
+    "microbit": "calliope-mini/microbit#v2.0.0-calliope-1.0.5"
+  },
+  "targetDependencies": {},
+  "bin": "./source"
+}

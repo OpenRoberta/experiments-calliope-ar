@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:labelVisibilityMode="labeled"
+    tools:context=".visualization.CameraActivity">
+
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="de.fhg.iais.roberta.ar.visualization.CustomArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/scrollView" />
+
+    <ImageView
+        android:id="@+id/image_view_fit_to_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/fit_image_to_scan"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/fit_to_scan" />
+
+    <ImageButton
+        android:id="@+id/bluetooth_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/left_arrow_description"
+        android:scaleType="fitCenter"
+        android:tint="#FF0000"
+        app:srcCompat="@android:drawable/stat_sys_data_bluetooth" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/button_camp"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/background_border"
+                android:padding="5dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/imageView_camp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/textView_camp"
+                    android:tint="#FFFFFF"
+                    app:srcCompat="@drawable/camp" />
+
+                <TextView
+                    android:id="@+id/textView_camp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/mclaren"
+                    android:gravity="center"
+                    android:minHeight="20dp"
+                    android:text="@string/button_camp"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/button_compass"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/background_border"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView_compass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/textView_compass"
+                    android:contentDescription="@string/button_compass"
+                    android:tint="#FFFFFF"
+                    app:srcCompat="@drawable/compass_2" />
+
+                <TextView
+                    android:id="@+id/textView_compass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/mclaren"
+                    android:gravity="center"
+                    android:minHeight="20dp"
+                    android:text="@string/button_compass"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/button_temperature"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/background_border"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView_temperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/textView_temperature"
+                    android:contentDescription="@string/button_temperature"
+                    android:tint="#FFFFFF"
+                    app:srcCompat="@drawable/temperature_c_only" />
+
+                <TextView
+                    android:id="@+id/textView_temperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/mclaren"
+                    android:gravity="center"
+                    android:minHeight="20dp"
+                    android:text="@string/button_temperature_short"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/button_thermometer"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/background_border"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView_thermometer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/button_temperature"
+                    android:layout_above="@id/textView_thermometer"
+                    android:tint="#FFFFFF"
+                    app:srcCompat="@drawable/temperature_c" />
+
+                <TextView
+                    android:id="@+id/textView_thermometer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/mclaren"
+                    android:gravity="center"
+                    android:minHeight="20dp"
+                    android:text="@string/button_thermometer_short"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/button_light"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/background_border"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/textView_light"
+                    android:contentDescription="@string/button_light"
+                    android:tint="#FFFFFF"
+                    app:srcCompat="@drawable/light_bulb" />
+
+                <TextView
+                    android:id="@+id/textView_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/mclaren"
+                    android:gravity="center"
+                    android:minHeight="20dp"
+                    android:text="@string/button_light"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/button_audio"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/background_border"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView_audio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/textView_audio"
+                    android:contentDescription="@string/button_audio"
+                    android:tint="#FFFFFF"
+                    app:srcCompat="@drawable/audio_micro" />
+
+                <TextView
+                    android:id="@+id/textView_audio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/mclaren"
+                    android:gravity="center"
+                    android:minHeight="20dp"
+                    android:text="@string/button_audio_short"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/button_acceleration"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/background_border"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView_accelerometer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/textView_accelerometer"
+                    android:contentDescription="@string/button_accelerometer"
+                    android:tint="#FFFFFF"
+                    app:srcCompat="@drawable/acceloration" />
+
+                <TextView
+                    android:id="@+id/textView_accelerometer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/mclaren"
+                    android:gravity="center"
+                    android:minHeight="20dp"
+                    android:text="@string/button_accelerometer_short"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</RelativeLayout>
