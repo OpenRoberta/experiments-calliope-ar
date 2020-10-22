@@ -3,6 +3,9 @@
 This was created as a student project in collaboration with [Nils Wittich](https://github.com/nwittich), [Dominic Gibietz](https://github.com/dogib), Daniel Helmer, two unnamed students and [Prof. Christoph Thomas](https://www.frankfurt-university.de/de/hochschule/fachbereich-2-informatik-und-ingenieurwissenschaften/kontakt/professorinnen-und-professoren-im-fachbereich-2-informatik-und-ingenieurwissenschaften/christoph-thomas/) of [Frankfurt University of Applied Sciences](https://www.frankfurt-university.de/en/).
 The goal was to create a real time augmented reality visualization of a Calliope mini's sensor data.
 
+The built files are available as a GitHub Release [here](https://github.com/OpenRoberta/experiments-calliope-ar/releases).
+Refer to [Quickstart](#Quickstart) for instructions, an Android version >= 7.0 is required.
+
 The following documentation is mostly in German as it was created as part of the German coursework.
 
 ## Firmware
@@ -32,7 +35,7 @@ Des Weiteren kann eine Camp-Szenerie dargestellt werden, in der alle Sensoren vi
 ### Quickstart
 1. Google Play-Dienste für AR aus dem Play-Store installieren (siehe [hier](https://play.google.com/store/apps/details?id=com.google.ar.core))
 2. Diese Applikation auf dem Smartphone installieren
-3. Die aktuelle Calliope-Firmware auf dem Calliope installieren (siehe [hier](https://github.com/NWittich/Calliope_WORKING/blob/master/README.md#how-to-use)) und starten
+3. Die aktuelle Calliope-Firmware auf dem Calliope installieren (siehe [hier](/firmware/README.md#how-to-use)) und starten
 4. Applikation auf dem Smartphone starten
 5. Das rote Bluetooth-Symbol in der oberen rechten Ecke drücken
 6. Nach einigen Sekunden sollte automatisch eine Verbindung zum Calliope hergestellt werden (siehe [Bluetooth](#bluetooth-verbindung-herstellen))
